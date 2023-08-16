@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8" />
+   <link rel="icon" href="assets/icons/logo.png" type="image/x-icon"/>
+   <title>Batik Versatile</title>
+
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="base_layout.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+
+    <header>
+        <a href="#" id="logo-image">
+            <img id="site-logo" src="assets/icons/logo.png" alt="Batik Versatile">
+        </a>
+
+        <nav>
+            <div class="menubar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about/about.html">About</a></li>
+                    <li><a href="products/products.html">Products</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="products/men_category.html">Men</a></li>
+                                <li><a href="products/women_category.html">Women</a></li>
+                                <li><a href="products/accessories.html">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact/contact.html">contact</a></li>
+                    <li><a href="faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        
+
+            <div class="icons">    
+                <li><a href="#" class="fa fa-user-circle"></a>
+                    <div class="sub-menu">  
+                        <ul>
+                            <li><a href="profile/profile.html">Profile</a></li>
+                            <li><a href="profile/login.html">Login</a></li>
+                            <li><a href="profile/register.html">Register</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="cart/cart.html" class="fas fa-shopping-cart" id="cart-icon"></a>
+                <a href="#" id="menu-btn" class="fas fa-bars"></a>
+                <div class="mobile-view">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about/about.html">About</a></li>
+                        <li><a href="products/products.html">Products</a></li>
+                        <div class="mobile-sub">
+                            <li><a href="products/men_category.html">Men</a></li>
+                            <li><a href="products/women_category.html">Women</a></li>
+                            <li><a href="products/accessories.html">Accessories</a></li>
+                        </div>
+                        <li><a href="contact/contact.html">Contact</a></li>
+                        <li><a href="faq/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+    </header>
+
+    <!-- HEADER END-->
+
+    <!-- MAIN CONTENT START -->
+
+    <!-- Top Slider Banner -->
+    <section class="home-banner">
+        <div class="slider">
+            <div class="slides">
+                <!-- Navigation buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <!-- Images -->
+                <div class="slide first">
+                    <img src="assets/images/index_img/banner1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/index_img/banner2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/index_img/banner3.jpg" alt="">
+                </div>
+
+                <!-- Automatic Nav -->
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <!-- Manual Nav -->
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization features -->
+    <section class="features-banner">
+        <div class="features">
+            <img src="assets/images/index_img/clean-cloths.png" alt="" class="feature-img">
+            <span>Clean and comfortable</span>
+        </div>
+        <div class="features">
+            <img src="assets/images/index_img/money-back.png" alt="" class="feature-img">
+            <span>30 days money-back guranteed</span>
+        </div>
+        <div class="features">
+            <img src="assets/images/index_img/on-time.png" alt="" class="feature-img">
+            <span>Deliver on time</span>
+        </div>
+    </section>
+
+    <!-- Categories of Products -->
+    <h2 class="products-header green-bg">Products</h2>
+    <section class="products-cat green-bg">
+        <a href="products/men_category.html" class="product-category">
+            <h2>Men</h2>
+            <span></span>
+        </a>
+        <a href="products/women_category.html" class="product-category">
+            <h2>Women</h2>
+            <span></span>
+        </a>
+        <a href="products/accessories.html" class="product-category">
+            <h2>Accessories</h2>
+            <span></span>
+        </a>
+    </section>
+
+    <!-- Testimonies -->
+    <h2 id="testimony-header">Testimonies</h2>
+    <section class="testimony">
+        
+        <div class="testimonies">
+            <img src="assets/images/index_img/people_head_1.jpg" alt="">
+            <div class="ratings">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            <h4>Siti binti Agus</h4>
+            <span>Amazing services! Replies quickly to inquiries and delivers quickly!</span>
+        </div>
+        <div class="testimonies">
+            <img src="assets/images/index_img/people_head_2.jpg" alt="">
+            <div class="ratings">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            <h4>Maazina Dhaki</h4>
+            <span>Great Batik! Would love to buy more from here in the future!</span>
+        </div>
+        <div class="testimonies">
+            <img src="assets/images/index_img/people_head_3.jpg" alt="">
+            <div class="ratings">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+
+            <h4>Jaabir bin Ihaab</h4>
+            <span>Batik is great and beautiful... Good customer services... Just great, in general</span>
+        </div>
+    </section>
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+
+    <footer>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Batik Versatile works to provide the best, most comfortable batik across Malaysia!</p>
+            </div>
+    
+            <div class="box">
+                <h3>Category</h3>
+                <a href="products/men_category.html"> <i class="fas fa-arrow-right"></i> Men </a>
+                <a href="products/women_category.html"> <i class="fas fa-arrow-right"></i> Women </a>
+                <a href="products/accessories.html"> <i class="fas fa-arrow-right"></i> Accessories </a>
+            </div>
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="about/about.html"> <i class="fas fa-arrow-right"></i> Abouts </a>
+                <a href="products/products.html"> <i class="fas fa-arrow-right"></i> Products </a>
+                <a href="contact/contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+                <a href="faq/faq.html"> <i class="fas fa-arrow-right"></i> FAQ </a>
+            </div>
+        </div>
+
+        <div class="scomed">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="credit"> copyright &copy; 2022 by <span>Batik Versatile Team</span> </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+    <script type="text/javascript">
+        var counter=1;
+
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 3) {
+                counter = 1;
+            }
+        },5000);
+    </script>
+</body>
+
+</html>

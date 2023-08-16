@@ -1,0 +1,34 @@
+batikVersatile
+- base_layout.css
+- reset.css
+- base_script.js
+- home
+   - index.html
+   - home.css
+- about
+   - about.html
+   - about.css
+- contact
+   - contact.html
+   - contact.css
+- faq
+   - faq.html
+   - faq.css
+- products
+   - products_img (store all the images for men, women and accessories category)
+   - products.html
+   - men_category.html
+   - women_category.html
+   - accessories.html
+   - products.css
+- cart
+   - cart.html
+   - cart.css
+- profile
+   - login.html
+   - register.html
+   - profile.html
+- assets
+   - fonts (stores all fonts used in the site)
+   - icons (stores all icons)
+   

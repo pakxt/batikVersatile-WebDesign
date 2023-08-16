@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/icons/logo.png" type="image/x-icon"/>
+  <title>Batik Versatile - Profile</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../base_layout.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <a href="../index.html" id="logo-image">
+            <img id="site-logo" src="../assets/icons/logo.png" alt="Batik Versatile">
+        </a>
+
+        <nav>
+            <div class="menubar">
+                <ul>
+                <!-- Depending on what page you're working on, do adjust the links -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../products/products.html">Products</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="../products/men_category.html">Men</a></li>
+                                <li><a href="../products/women_category.html">Women</a></li>
+                                <li><a href="../products/accessories.html">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../contact/contact.html">contact</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        
+
+            <div class="icons">    
+                <li><a href="#" class="fa fa-user-circle"></a>
+                    <div class="sub-menu">  
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="../cart/cart.html" class="fas fa-shopping-cart" id="cart-icon"></a>
+                <a href="#" id="menu-btn" class="fas fa-bars"></a>
+                <div class="mobile-view">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../products/products.html">Products</a></li>
+                        <div class="mobile-sub">
+                            <li><a href="../products/men_category.html">Men</a></li>
+                            <li><a href="../products/women_category.html">Women</a></li>
+                            <li><a href="../products/accessories.html">Accessories</a></li>
+                        </div>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../faq/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END-->
+
+    <!-- MAIN CONTENT START -->
+    <div class="profile-container">
+        <div class="leftbox">
+            <nav class="profile-bar">
+                <a onclick="tabs(0)" class="tab active">
+                    <i class="fas fa-user"></i>
+                    <p id="navtext">My Account</p>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                    <i class="fas fa-credit-card"></i>
+                    <p id="navtext">Payment</p>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                    <i class="fas fa-map"></i>
+                    <p id="navtext">Address</p>
+                </a>
+                <a onclick="tabs(3)" class="tab">
+                    <i class="fas fa-lock"></i>
+                    <p id="navtext">Change Password</p>
+                </a>
+                <a onclick="tabs(4)" class="tab">
+                    <i class="fas fa-cog"></i>
+                    <p id="navtext">Setting</p>
+                </a>
+            </nav>
+        </div>
+
+        <div class="profile-content">
+            <div> 
+                <div id="img-section"> 
+                    <img src="../assets/images/userImg.png" class="img" id="img" alt=""><br>
+                    <b>Profile Photo</b>
+                    <p>Accepted file type .png, .jpg and .jpeg</p> 
+                    <input type="file" id="upload" accept="image/*" onchange="showPreviewOne(event);" hidden/>
+                    <label for="upload" class="uploadBtn" id="imgRemove" onclick="myImgRemoveFunctionOne();">Upload</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightbox">
+            <div class="profile tabShow">
+                <h1>Personal Info</h1>
+                <h2>Username</h2>
+                <input type="text" class="input" value="Suki">
+                <h2>Birthday</h2>
+                <input type="date" class="birthday" value="2002-07-22">
+                <h2>Gender</h2>
+                <div class="radio-btn">
+                    <input type="radio" name="gender" id="gender" value="male"> 
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender" value="female" checked> 
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="gender" value="other"> 
+                    <label for="other">Other</label>
+                </div>
+                
+                <h2>Email</h2>
+                <input type="text" class="input" value="suki0722@gmail.com">
+                
+                <button class="btn">Save</button>
+            </div>
+
+            <div class="payment tabShow">
+                <h1>Payment Info</h1>
+                <h2>Payment Method</h2>
+                <div class="radio-btn">
+                    <input type="radio" name="paymentMethod" id="paymentMethod" value="creditcard" checked> 
+                    <label for="creditcard">Credit card</label>
+                    <input type="radio" name="paymentMethod" id="paymentMethod" value="paypal"> 
+                    <label for="paypal">PayPal</label>
+                    <input type="radio" name="paymentMethod" id="paymentMethod" value="coupon"> 
+                    <label for="coupon">Coupon</label>
+                </div>
+    
+                <h2>Payment Type</h2>
+                <div class="option"> 
+                    <select name="paymentType" id="paymentType" class="bg-light">
+                        <option value="visa">Visa</option>
+                        <option value="masterCard" selected>MasterCard</option>
+                        <option value="americanExpress">American Express</option>
+                    </select> 
+                </div>
+                <h2>Card Number</h2>
+                <input type="text" class="input" value="0202 **** **** 7336">
+                <h2>Expiry Date</h2>
+                <input type="text" class="input" value="22-12-2025">
+                
+                <button class="btn">Save</button>
+            </div>
+
+            <div class="address tabShow">
+                <h1>Address Info</h1>
+                <h2>Address</h2>
+                <input type="text" class="input" value="No.12, Jalan 3, Desa Petaling, Kuala Lumpur">
+                <h2>Postcode</h2>
+                <input type="text" class="input" value="57100">
+                <h2>State</h2>
+                <div class="option">
+                    <select name="state" id="state" class="bg-light">
+                        <option value="johor">JOHOR</option>
+                        <option value="kedah">KEDAH</option>
+                        <option value="kelantan">KELANTAN</option>
+                        <option value="melaka">MELAKA</option>
+                        <option value="negeri sembilan">NEGERI SEMBILAN</option>
+                        <option value="pahang">PAHANG</option>
+                        <option value="perak">PERAK</option>
+                        <option value="perlis">PERLIS</option>
+                        <option value="pulau pinang">PULAU PINANG</option>
+                        <option value="sabah">SABAH</option>
+                        <option value="sarawak">SARAWAK</option>
+                        <option value="selangor">SELANGOR</option>
+                        <option value="terengganu">TERENGGANU</option>
+                        <option value="kuala lumpur" selected>WILAYAH PERSEKUTUAN, KUALA LUMPUR</option>
+                        <option value="labuan">WILAYAH PERSEKUTUAN, LABUAN</option>
+                        <option value="putrajaya">WILAYAH PERSEKUTUAN, PUTRAJAYA</option>
+                        <option value="others">OTHERS</option>
+                    </select> 
+                </div>
+                
+                <button class="btn">Save</button>
+            </div>
+
+            <div class="password tabShow">
+                <h1>Change Password</h1>
+                <div class="password-section">
+                    <h2>Password</h2>
+                    <form class="password-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input name="currentPassword" placeholder="Old Password" type="password" class="form-control" autocomplete="Old Password" value="">
+                                <span class="focus-input"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input name="password" placeholder="New Password" type="password" class="form-control" autocomplete="New Password" value="">
+                                <span class="focus-input"></span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn" type="submit" disabled="">Change Password</button>
+                    </form>
+                </div>             
+            </div>
+
+            <div class="setting tabShow">
+                <h1>Setting</h1>
+                <div class="lang"> 
+                    <h2>Language</h2>
+                    <div class="option"> 
+                        <select name="language" id="language" class="bg-light">
+                            <option value="arab">Arabic</option>
+                            <option value="english" selected>English</option>
+                            <option value="english_us">English (United States)</option>
+                            <option value="enguk">English UK</option>
+                            <option value="malay">Malay</option>
+                        </select> 
+                    </div>
+
+                        <button class="btn-1">Save Changes</button>
+                        <button class="btn-1">Cancel</button>
+
+                </div>
+
+                <div class="deactivate" id="deactivate">
+                    <div>
+                        <h4>Deactivate your account</h4>
+                        <p>Deactivating your account will disable your profile and remove your info, photo and password.</p>
+                    </div>
+                    
+                    <button class="btn danger">Deactivate</button> 
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Batik Versatile works to provide the best, most comfortable batik across Malaysia!</p>
+            </div>
+    
+            <div class="box">
+                <h3>Category</h3>
+                <a href="../products/men_category.html"> <i class="fas fa-arrow-right"></i> Men </a>
+                <a href="../products/women_category.html"> <i class="fas fa-arrow-right"></i> Women </a>
+                <a href="../products/products.html"> <i class="fas fa-arrow-right"></i> Accessories </a>
+            </div>
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="../index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="../about/about.html"> <i class="fas fa-arrow-right"></i> Abouts </a>
+                <a href="../products/products.html"> <i class="fas fa-arrow-right"></i> Products </a>
+                <a href="../contact/contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+                <a href="../faq/faq.html"> <i class="fas fa-arrow-right"></i> FAQ </a>
+            </div>
+        </div>
+
+        <div class="scomed">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="credit"> copyright &copy; 2022 by <span><i>Batik Versatile Team</i></span> </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="profile_script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Darkgreen - #026670
+Lightgreen - #9FEDD7
+Lightyellow - #FEF9C7
+Darkyellow - #FCE181
+Lightgrey - #EDEAE5
+
+Use https://paletton.com/ to find shades

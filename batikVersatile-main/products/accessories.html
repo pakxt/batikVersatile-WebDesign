@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <link rel="icon" href="../assets/icons/logo.png" type="image/x-icon"/>
+   <title>Batik Versatile Accessories</title>
+
+   <link rel="stylesheet" href="../reset.css">
+   <link rel="stylesheet" href="../base_layout.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="products_category.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+
+    <header>
+        <a href="../index.html" id="logo-image">
+            <img id="site-logo" src="../assets/icons/logo.png" alt="Batik Versatile">
+        </a>
+
+        <nav>
+            <div class="menubar">
+                <ul>
+                <!-- Depending on what page you're working on, do adjust the links -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="products.html">Products</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="men_category.html">Men</a></li>
+                                <li><a href="women_category.html">Women</a></li>
+                                <li><a href="accessories.html">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../contact/contact.html">contact</a></li>
+                    <li><a href="../faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        
+
+            <div class="icons">
+                <li><a href="#" class="fa fa-user-circle"></a>
+                    <div class="sub-menu">  
+                        <ul>
+                            <li><a href="../profile/profile.html">Profile</a></li>
+                            <li><a href="../profile/login.html">Login</a></li>
+                            <li><a href="../profile/register.html">Register</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="../cart/cart.html" class="fas fa-shopping-cart" id="cart-icon"></a> 
+                <a href="#" id="menu-btn" class="fas fa-bars"></a>
+                <div class="mobile-view">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <div class="mobile-sub">
+                            <li><a href="men_category.html">Men</a></li>
+                            <li><a href="women_category.html">Women</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </div>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                        <li><a href="../faq/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- HEADER END-->
+
+    <!-- MAIN CONTENT START -->
+
+    
+    <div class="container">
+        <div class="upper-container">
+            <img src="products_image/Accessory/accessory_poster.png">
+
+            <div class="searchBar-container">
+                <form action="#" class="searchForm" method="get">
+                    <div class="searchBar"> 
+                        <input type="search" 
+                        id="searchFaq"
+                        name="searchFaq" 
+                        placeholder="Search here">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="category-container">
+                <nav class="category">
+                    <ul>
+                        <div>
+                            <li><a href="men_category.html">MEN</a></li>
+                        </div>
+                        <div>
+                            <li><a href="women_category.html">WOMEN</a></li>
+                        </div>
+                        <div>
+                            <li><a href="accessories.html">ACCESSORIES</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--lower part-->
+        <div class="lower-container">
+            <div class="products">
+                <h1>Accessories</h1>
+
+                <div class="product">
+
+                </div>
+                <div class="product-containers">
+                    <div class="product-item">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="products_image/Accessory/accessory_1.png">
+                            </div>
+                            <div class="product-details">
+                                <h3>Batik Face Masks (in sets of 3)</h3>
+                                <h3>RM30.00</h3>
+                            </div>
+                            <div class="product-quantity">
+                                <form action="#" method="get">
+                                        <label for="quantity1">Qty:</label>
+                                        <input type="number" id="quantity1" name="quantity1" min="1" value="1" step="1">
+                                        <input type="submit" value="Add to cart">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="products_image/Accessory/accessory_2.png">
+                            </div>
+                            <div class="product-details">
+                                <h3>Batik Scrunchies (Plants)</h3>
+                                <h3>RM4.50</h3>
+                            </div>
+                            <div class="product-quantity">
+                                <form action="#" method="get">
+                                    <div>
+                                        <label for="quantity2">Qty:</label>
+                                        <input type="number" id="quantity2" name="quantity2" min="1" value="1" step="1">
+                                        <input type="submit" value="Add to cart">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="products_image/Accessory/accessory_3.png">
+                            </div>
+                            <div class="product-details">
+                                <h3>Batik Tote Bag (Red Flowers)</h3>
+                                <h3>RM10.00</h3>
+                            </div>
+                            <div class="product-quantity">
+                                <form action="#" method="get">
+                                    <div>
+                                        <label for="quantity3">Qty:</label>
+                                        <input type="number" id="quantity3" name="quantity3" min="1" value="1" step="1">
+                                        <input type="submit" value="Add to cart">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="products_image/Accessory/accessory_4.png">
+                            </div>
+                            <div class="product-details">
+                                <h3>Batik Headband</h3>
+                                <h3>RM5.00</h3>
+                            </div>
+                            <div class="product-quantity">
+                                <form action="#" method="get">
+                                    <div>
+                                        <label for="quantity4">Qty:</label>
+                                        <input type="number" id="quantity4" name="quantity4" min="1" value="1" step="1">
+                                        <input type="submit" value="Add to cart">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="products_image/Accessory/accessory_5.png">
+                            </div>
+                            <div class="product-details">
+                                <h3>Batik Scrunchies (Blue)</h3>
+                                <h3>RM50.00</h3>
+                            </div>
+                            <div class="product-quantity">
+                                <form action="#" method="get">
+                                    <div>
+                                        <label for="quantity5">Qty:</label>
+                                        <input type="number" id="quantity5" name="quantity5" min="1" value="1" step="1">
+                                        <input type="submit" value="Add to cart">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="products_image/Accessory/accessory_6.png">
+                            </div>
+                            <div class="product-details">
+                                <h3>Batik Tote Bag (Pink)</h3>
+                                <h3>RM10.00</h3>
+                            </div>
+                            <div class="product-quantity">
+                                <form action="#" method="get">
+                                    <div>
+                                        <label for="quantity6">Qty:</label>
+                                        <input type="number" id="quantity6" name="quantity6" min="1" value="1" step="1">
+                                        <input type="submit" value="Add to cart">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    
+
+
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER START -->
+
+    <footer>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Batik Versatile works to provide the best, most comfortable batik across Malaysia!</p>
+            </div>
+    
+            <div class="box">
+                <h3>Category</h3>
+                <a href="men_category.html"> <i class="fas fa-arrow-right"></i> Men </a>
+                <a href="women_category.html"> <i class="fas fa-arrow-right"></i> Women </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Accessories </a>
+            </div>
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="../index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="../about/about.html"> <i class="fas fa-arrow-right"></i> Abouts </a>
+                <a href="products.html"> <i class="fas fa-arrow-right"></i> Products </a>
+                <a href="../contact/contact.html"> <i class="fas fa-arrow-right"></i> Contact </a>
+                <a href="../faq/faq.html"> <i class="fas fa-arrow-right"></i> FAQ </a>
+            </div>
+        </div>
+
+        <div class="scomed">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="credit"> copyright &copy; 2022 by <span>Batik Versatile Team</span> </div>
+    </footer>
+
+    <!-- FOOTER END -->
+</body>
+
+</html>

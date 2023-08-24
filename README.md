@@ -1,1 +1,1 @@
-# batikVersatile-WebDesign
+# batikVersatile-E-commerse WebDesign
